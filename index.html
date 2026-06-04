@@ -31,6 +31,11 @@
       border-bottom: 1px solid var(--line);
     }
 
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
     .eyebrow {
       margin: 0 0 14px;
       color: var(--teal);
@@ -43,7 +48,7 @@
     h1 {
       max-width: 940px;
       margin: 0;
-      font-size: clamp(2.3rem, 6vw, 5.2rem);
+      font-size: clamp(2.3rem, 6vw, 4.7rem);
       line-height: 1;
       letter-spacing: 0;
     }
@@ -53,6 +58,77 @@
       margin: 22px 0 0;
       color: var(--muted);
       font-size: 1.08rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.3fr .95fr;
+      gap: 16px;
+      margin-top: clamp(28px, 5vw, 48px);
+    }
+
+    .hero-block {
+      display: flex;
+      flex-direction: column;
+      min-height: 320px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: 0 12px 30px rgba(17, 32, 50, 0.08);
+    }
+
+    .hero-block.feature {
+      border-color: rgba(0, 125, 121, 0.28);
+      background: #112032;
+      color: var(--white);
+    }
+
+    .hero-block.feature p,
+    .hero-block.feature .block-kicker {
+      color: #d2e1ea;
+    }
+
+    .block-kicker {
+      margin: 0 0 12px;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .hero-block h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.35rem, 2.2vw, 2rem);
+      line-height: 1.08;
+    }
+
+    .hero-block p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      width: fit-content;
+      margin: 6px 0 20px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: var(--gold);
+      color: #102031;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 14px 28px rgba(200, 138, 32, 0.28);
+    }
+
+    .hero-cta:hover {
+      text-decoration: none;
+      background: #dda13b;
     }
 
     .wrap {
@@ -158,6 +234,8 @@
 
     @media (max-width: 1050px) {
       .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-block { min-height: auto; }
     }
 
     @media (max-width: 620px) {
@@ -170,9 +248,32 @@
 </head>
 <body>
   <header class="hero">
-    <p class="eyebrow">Gobernanza practica con herramientas y dashboards</p>
-    <h1>Digital Business Intelligence Portfolio</h1>
-    <p class="lead">Portafolio academico de Maria Jesus Quiros Castro con productos de datos, dashboards ejecutivos y aplicaciones orientadas a decision, gobernanza y experiencia de usuario.</p>
+    <div class="hero-inner">
+      <p class="eyebrow">Gobernanza practica con herramientas y dashboards</p>
+      <h1>Digital Business Intelligence Portfolio</h1>
+      <p class="lead">Portafolio academico de Maria Jesus Quiros Castro con productos de datos, dashboards ejecutivos y aplicaciones orientadas a decision, gobernanza y experiencia de usuario.</p>
+
+      <div class="hero-grid" aria-label="Introduccion del portafolio">
+        <section class="hero-block">
+          <p class="block-kicker">Bloque 1 — Qué es</p>
+          <h2>Artefactos digitales reales para Business Intelligence</h2>
+          <p>Este portafolio es el resultado de la especialización Digital Business Intelligence: Gobernanza Práctica con Herramientas y Dashboards de INCAE Business School. Cada semana produce un artefacto digital real: dashboards ejecutivos, lecturas BI y aplicaciones construidas con IA, todos conectados a los 6 Pivotes de la Evolución Digital.</p>
+        </section>
+
+        <section class="hero-block feature">
+          <p class="block-kicker">Bloque 2 — Para qué existe</p>
+          <h2>Datos, normativa y procesos convertidos en decisiones</h2>
+          <a class="hero-cta" href="https://tutor-comex-utn.lovable.app" target="_blank" rel="noopener noreferrer">Abrir Asistente COMEX UTN →</a>
+          <p>Existe para demostrar que es posible convertir datos, normativa y procesos complejos en herramientas de decisión claras, trazables y orientadas al usuario, usando IA sin necesidad de código tradicional. El producto más representativo es el Asistente Académico COMEX UTN (Semana 05): una app web que transforma la normativa dispersa de la carrera de Comercio Exterior de la UTN en orientación académica accionable para estudiantes.</p>
+        </section>
+
+        <section class="hero-block">
+          <p class="block-kicker">Bloque 3 — Para quién</p>
+          <h2>Evidencia concreta para negocio, academia y usuarios reales</h2>
+          <p>Para directivos, reclutadores y evaluadores académicos que quieren ver evidencia concreta de aplicación de IA en contextos reales. También para estudiantes de UTN sede San Carlos que usan el Asistente COMEX como herramienta de consulta cotidiana.</p>
+        </section>
+      </div>
+    </div>
   </header>
 
   <main class="wrap">
