@@ -1,0 +1,50 @@
+# Digital-Business-Intelligence-gobernanza-practica-con-herramientas-y-dashboards
+# 📘 Digital Business Intelligence Portfolio
+
+## Gobernanza práctica con herramientas y dashboards
+
+**Autora:** María Jesús Quirós Castro  
+**Curso:** Digital Business Intelligence  
+**Programa:** Especialización en IA para Negocios Digitales  
+**Año:** 2026  
+
+---
+
+## 🧭 Introducción
+
+Este portafolio presenta el desarrollo de seis productos de datos elaborados a partir de casos prácticos del curso. Cada producto integra análisis, visualización y gobernanza de datos, con el objetivo de generar información útil para la toma de decisiones.
+
+Asimismo, el portafolio se fundamenta en los seis pivotes estratégicos para la evolución digital de las empresas: el alineamiento dinámico, la cultura y el liderazgo digital, la innovación centrada en el cliente, la agilidad operativa, el acceso y uso de datos, y los ecosistemas colaborativos. Estos elementos orientan el desarrollo de cada producto, permitiendo no solo la construcción de dashboards, sino la generación de valor desde una perspectiva estratégica, integradora y orientada al negocio.
+
+---
+
+## 🎯 Justificación
+
+Este portafolio documenta el desarrollo de competencias en inteligencia de negocios, evidenciando la capacidad de transformar datos en decisiones estratégicas, integrando principios de gobernanza como calidad, trazabilidad y uso responsable de la información.
+
+---
+
+## 📊 Data Products
+
+1. Alineamiento dinámico
+2. Cultura y liderazgo digital
+3. Innovación centrada en el cliente
+4. RAPS myRAzept
+5. Semana 05: Asistente académico COMEX UTN
+6. Ecosistemas colaborativos
+
+---
+
+## 🆕 Semana 05
+
+La actualización más reciente documenta el proyecto [Tutor COMEX UTN](https://tutor-comex-utn.lovable.app), una app web creada en Lovable para orientar a estudiantes de Comercio Exterior de la UTN, Sede Regional San Carlos.
+
+**Entregable:** [Semana 05 · Asistente académico COMEX UTN](Semana05/)
+---
+
+## ⚙️ Herramientas utilizadas
+
+- Power BI  
+- Excel  
+- GitHub  
+- IA aplicada al análisis de datos  
