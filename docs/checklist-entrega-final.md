@@ -12,6 +12,10 @@ Sitio publicado:
 
 <https://maryj0801.github.io/Digital-Business-Intelligence-gobernanza-practica-con-herramientas-y-dashboards/>
 
+Rama publicada en GitHub Pages:
+
+- `Semana02`, sincronizada con `Semana04` después de cada actualización del portafolio central.
+
 ## Rutas públicas a verificar
 
 - [ ] Portada principal
