@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maryj0801.github.io/Digital-Business-Intelligence-gobernanza-practica-con-herramientas-y-dashboards/sitemap.xml
