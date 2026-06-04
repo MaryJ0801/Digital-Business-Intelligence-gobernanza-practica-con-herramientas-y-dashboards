@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina no encontrada | Digital Business Intelligence</title>
+  <style>
+    :root {
+      --ink: #112032;
+      --muted: #5d7184;
+      --line: #d9e3ea;
+      --paper: #f5f9fb;
+      --white: #ffffff;
+      --teal: #007d79;
+      --gold: #c88a20;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(135deg, #ffffff 0%, #edf7f7 100%);
+      line-height: 1.6;
+    }
+
+    main {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: clamp(24px, 6vw, 72px);
+    }
+
+    .panel {
+      width: min(760px, 100%);
+      padding: clamp(28px, 5vw, 52px);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 18px 42px rgba(17, 32, 50, 0.12);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--teal);
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    p {
+      max-width: 640px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 8px;
+      color: var(--teal);
+      border: 1px solid var(--teal);
+      background: #f3fbfb;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    a.primary {
+      color: #102031;
+      border-color: var(--gold);
+      background: var(--gold);
+      box-shadow: 0 14px 28px rgba(200, 138, 32, 0.22);
+    }
+
+    a:hover {
+      text-decoration: none;
+      filter: brightness(0.98);
+    }
+
+    @media (max-width: 620px) {
+      a { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel" aria-label="Pagina no encontrada">
+      <p class="eyebrow">Digital Business Intelligence</p>
+      <h1>Pagina no encontrada</h1>
+      <p>La ruta solicitada no existe o cambio de ubicacion. Puedes volver a la portada del portafolio o revisar la documentacion de evaluacion.</p>
+      <div class="links" aria-label="Enlaces principales del portafolio">
+        <a class="primary" href="./">Volver al portafolio</a>
+        <a href="docs/">Centro de documentacion</a>
+        <a href="Semana05/">Semana 05</a>
+        <a href="PortafolioDatos/">Portafolio de Datos</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
