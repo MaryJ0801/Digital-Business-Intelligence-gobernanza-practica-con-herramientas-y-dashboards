@@ -1,0 +1,17 @@
+{
+  "name": "Digital Business Intelligence Portfolio",
+  "short_name": "DBI Portfolio",
+  "description": "Portafolio academico y profesional de Maria Jesus Quiros Castro.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f9fb",
+  "theme_color": "#007d79",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
