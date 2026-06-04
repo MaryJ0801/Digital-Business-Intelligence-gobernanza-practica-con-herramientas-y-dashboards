@@ -131,6 +131,84 @@
       background: #dda13b;
     }
 
+    .spotlight-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+      gap: 24px;
+      margin-top: 18px;
+      padding: 26px;
+      border: 1px solid rgba(0, 125, 121, 0.22);
+      border-radius: 8px;
+      background: #112032;
+      color: var(--white);
+      box-shadow: 0 18px 42px rgba(17, 32, 50, 0.18);
+    }
+
+    .spotlight-card h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.45rem, 2.4vw, 2.25rem);
+    }
+
+    .spotlight-card h3 {
+      margin: 0 0 14px;
+      color: #e7f4f4;
+      font-size: clamp(1.08rem, 1.7vw, 1.4rem);
+    }
+
+    .spotlight-card p {
+      margin: 0;
+      color: #d2e1ea;
+    }
+
+    .spotlight-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: start;
+      justify-content: flex-end;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .button.primary {
+      background: var(--gold);
+      color: #102031;
+      box-shadow: 0 14px 28px rgba(200, 138, 32, 0.28);
+    }
+
+    .button.secondary {
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .button:hover {
+      text-decoration: none;
+    }
+
+    .spotlight-tags,
+    .bio-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .spotlight-tags .tag {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--white);
+    }
+
     .wrap {
       padding: clamp(34px, 6vw, 72px) clamp(18px, 5vw, 72px);
     }
@@ -225,6 +303,64 @@
     .featured .week { background: var(--gold); }
     .featured .tag { background: rgba(255, 255, 255, 0.12); color: var(--white); }
 
+    .bio-section {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 28px;
+      align-items: center;
+      margin-top: clamp(34px, 6vw, 72px);
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(17, 32, 50, 0.08);
+    }
+
+    .profile-photo {
+      display: grid;
+      place-items: center;
+      width: 160px;
+      height: 160px;
+      border: 3px solid #d8eeee;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #112032 0%, #007d79 100%);
+      color: var(--white);
+      font-size: 2.7rem;
+      font-weight: 800;
+    }
+
+    .bio-section h2 {
+      margin-bottom: 14px;
+    }
+
+    .bio-meta {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 16px;
+      color: var(--muted);
+    }
+
+    .bio-section p {
+      max-width: 900px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      margin-top: 18px;
+      color: var(--teal);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .github-link:hover {
+      text-decoration: underline;
+    }
+
     footer {
       padding: 30px clamp(18px, 5vw, 72px);
       color: var(--muted);
@@ -236,6 +372,8 @@
       .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .hero-grid { grid-template-columns: 1fr; }
       .hero-block { min-height: auto; }
+      .spotlight-card { grid-template-columns: 1fr; }
+      .spotlight-actions { justify-content: flex-start; }
     }
 
     @media (max-width: 620px) {
@@ -243,6 +381,9 @@
       .grid { grid-template-columns: 1fr; }
       .featured { grid-column: span 1; }
       .card { min-height: auto; }
+      .bio-section { grid-template-columns: 1fr; }
+      .profile-photo { width: 132px; height: 132px; font-size: 2.2rem; }
+      .button { width: 100%; }
     }
   </style>
 </head>
@@ -255,24 +396,41 @@
 
       <div class="hero-grid" aria-label="Introduccion del portafolio">
         <section class="hero-block">
-          <p class="block-kicker">Bloque 1 — Qué es</p>
+          <p class="block-kicker">&iquest;Qu&eacute; es?</p>
           <h2>Artefactos digitales reales para Business Intelligence</h2>
-          <p>Este portafolio es el resultado de la especialización Digital Business Intelligence: Gobernanza Práctica con Herramientas y Dashboards de INCAE Business School. Cada semana produce un artefacto digital real: dashboards ejecutivos, lecturas BI y aplicaciones construidas con IA, todos conectados a los 6 Pivotes de la Evolución Digital.</p>
-        </section>
-
-        <section class="hero-block feature">
-          <p class="block-kicker">Bloque 2 — Para qué existe</p>
-          <h2>Datos, normativa y procesos convertidos en decisiones</h2>
-          <a class="hero-cta" href="https://tutor-comex-utn.lovable.app" target="_blank" rel="noopener noreferrer">Abrir Asistente COMEX UTN →</a>
-          <p>Existe para demostrar que es posible convertir datos, normativa y procesos complejos en herramientas de decisión claras, trazables y orientadas al usuario, usando IA sin necesidad de código tradicional. El producto más representativo es el Asistente Académico COMEX UTN (Semana 05): una app web que transforma la normativa dispersa de la carrera de Comercio Exterior de la UTN en orientación académica accionable para estudiantes.</p>
+          <p>Este portafolio documenta la especializaci&oacute;n Digital Business Intelligence: Gobernanza Pr&aacute;ctica con Herramientas y Dashboards de INCAE Business School. Cada semana produce un artefacto digital real: dashboards ejecutivos, lecturas BI y aplicaciones construidas con IA, conectados a los 6 Pivotes de la Evoluci&oacute;n Digital.</p>
         </section>
 
         <section class="hero-block">
-          <p class="block-kicker">Bloque 3 — Para quién</p>
+          <p class="block-kicker">&iquest;Para qu&eacute; existe?</p>
+          <h2>Datos, normativa y procesos convertidos en decisiones</h2>
+          <p>Existe para demostrar que es posible convertir datos, normativa y procesos complejos en herramientas de decisi&oacute;n claras, trazables y orientadas al usuario, usando IA sin necesidad de c&oacute;digo tradicional. El producto m&aacute;s representativo es el Asistente Acad&eacute;mico COMEX UTN (Semana 05): una app web que transforma la normativa dispersa de la carrera de Comercio Exterior de la UTN en orientaci&oacute;n acad&eacute;mica accionable para estudiantes.</p>
+        </section>
+
+        <section class="hero-block">
+          <p class="block-kicker">&iquest;Para qui&eacute;n?</p>
           <h2>Evidencia concreta para negocio, academia y usuarios reales</h2>
-          <p>Para directivos, reclutadores y evaluadores académicos que quieren ver evidencia concreta de aplicación de IA en contextos reales. También para estudiantes de UTN sede San Carlos que usan el Asistente COMEX como herramienta de consulta cotidiana.</p>
+          <p>Para directivos, reclutadores y evaluadores acad&eacute;micos que buscan evidencia concreta de aplicaci&oacute;n de IA en contextos reales. Tambi&eacute;n para estudiantes de UTN sede San Carlos que usan el Asistente COMEX como herramienta de consulta cotidiana.</p>
         </section>
       </div>
+
+      <section class="spotlight-card" aria-label="Producto estrella Semana 05">
+        <div>
+          <p class="eyebrow">Producto destacado</p>
+          <h2>&#9733; Producto Estrella &mdash; Semana 05</h2>
+          <h3>Asistente Acad&eacute;mico COMEX UTN</h3>
+          <p>App web en Lovable que centraliza normativa, gu&iacute;as, calendario, boletas y asistente conversacional para estudiantes de Comercio Exterior de la UTN sede San Carlos. 7 m&oacute;dulos, 6 accesos, gobernanza responsable.</p>
+          <div class="spotlight-tags">
+            <span class="tag">Lovable</span>
+            <span class="tag">UTN</span>
+            <span class="tag">IA sin c&oacute;digo</span>
+          </div>
+        </div>
+        <div class="spotlight-actions">
+          <a class="button primary" href="https://tutor-comex-utn.lovable.app" target="_blank" rel="noopener noreferrer">Abrir app &rarr;</a>
+          <a class="button secondary" href="Semana05/">Ver p&aacute;gina completa &rarr;</a>
+        </div>
+      </section>
     </div>
   </header>
 
@@ -313,6 +471,30 @@
         <p>Actualizacion del proyecto Tutor COMEX UTN creado en Lovable: normativa, guias, calendario, boletas, buscador y asistente para estudiantes de Comercio Exterior.</p>
         <div class="tags"><span class="tag">Lovable</span><span class="tag">UTN</span><span class="tag">Semana 05</span></div>
       </a>
+    </section>
+
+    <section class="bio-section" aria-label="Sobre Maria Jesus Quiros Castro">
+      <div class="profile-photo" aria-label="Espacio reservado para foto de perfil">MJ</div>
+      <div>
+        <p class="eyebrow">Sobre m&iacute;</p>
+        <h2>Mar&iacute;a Jes&uacute;s Quir&oacute;s Castro</h2>
+        <div class="bio-meta">
+          <span><strong>Especializaci&oacute;n:</strong> IA para Negocios Digitales &mdash; INCAE Business School, 2026</span>
+          <span><strong>Instituci&oacute;n de contexto:</strong> UTN sede San Carlos</span>
+        </div>
+        <p>Profesional en formaci&oacute;n con foco en gobernanza digital, herramientas de inteligencia de negocios y aplicaciones de IA para la toma de decisiones. Este portafolio recoge los artefactos producidos semana a semana como evidencia de aprendizaje aplicado en el curso Digital Business Intelligence de INCAE.</p>
+        <a class="github-link" href="https://github.com/MaryJ0801" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub de Maria Jesus Quiros Castro">
+          <span aria-hidden="true">GitHub</span>
+          <span>github.com/MaryJ0801</span>
+        </a>
+        <div class="bio-badges" aria-label="Herramientas y plataformas">
+          <span class="tag">INCAE</span>
+          <span class="tag">Lovable</span>
+          <span class="tag">Chart.js</span>
+          <span class="tag">Plotly</span>
+          <span class="tag">GitHub Pages</span>
+        </div>
+      </div>
     </section>
   </main>
 
