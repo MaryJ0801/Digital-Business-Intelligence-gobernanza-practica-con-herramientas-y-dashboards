@@ -93,6 +93,8 @@ Recomendación: primero archivarlos durante unos días y comprobar que todos los
 
 ## Acciones manuales recomendadas en GitHub
 
+Ver centro web de documentación: [Centro de documentación](docs/).
+
 Ver guía rápida para evaluación: [Guía rápida para evaluación](GUIA_EVALUACION.md).
 
 Ver documento de soporte: [Reorganización profesional del portafolio](docs/reorganizacion-repositorios.md).
