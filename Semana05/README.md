@@ -19,5 +19,5 @@ Esta semana documenta la actualizacion del proyecto [Tutor COMEX UTN](https://tu
 ## Entregables
 
 - `index.html`: pagina ejecutiva de Semana 05 con lectura de valor, gobernanza y acceso a la app.
-- App publicada: <https://tutor-comex-utn.lovable.app>
+- App publicada para consulta directa: <https://tutor-comex-utn.lovable.app>
 - Proyecto en Lovable: <https://lovable.dev/projects/8566f0d5-1ad6-416a-970b-cf09044695fe>
