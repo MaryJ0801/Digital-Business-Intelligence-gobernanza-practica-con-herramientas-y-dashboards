@@ -39,6 +39,8 @@ Este portafolio documenta el desarrollo de competencias en inteligencia de negoc
 
 La actualización más reciente documenta el proyecto [Tutor COMEX UTN](https://tutor-comex-utn.lovable.app), una app web creada en Lovable para orientar a estudiantes de Comercio Exterior de la UTN, Sede Regional San Carlos.
 
+**Entregable Semana 02:** [Alineamiento Dinámico Huawei](Semana02/)
+
 **Entregable:** [Semana 05 · Asistente académico COMEX UTN](Semana05/)
 **Proyecto en Lovable:** [8566f0d5-1ad6-416a-970b-cf09044695fe](https://lovable.dev/projects/8566f0d5-1ad6-416a-970b-cf09044695fe)
 
