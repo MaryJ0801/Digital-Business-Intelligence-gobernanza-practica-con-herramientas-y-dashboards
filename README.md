@@ -93,6 +93,8 @@ Recomendación: primero archivarlos durante unos días y comprobar que todos los
 
 ## Acciones manuales recomendadas en GitHub
 
+Ver documento de soporte: [Reorganización profesional del portafolio](docs/reorganizacion-repositorios.md).
+
 1. Revisar GitHub Pages del repositorio principal y confirmar que cargan:
    - `/Semana02/`
    - `/Semana03/`
