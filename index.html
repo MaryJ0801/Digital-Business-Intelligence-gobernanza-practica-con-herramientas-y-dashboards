@@ -303,6 +303,42 @@
     .featured .week { background: var(--gold); }
     .featured .tag { background: rgba(255, 255, 255, 0.12); color: var(--white); }
 
+    .pivots-section {
+      margin: clamp(34px, 6vw, 72px) calc(clamp(18px, 5vw, 72px) * -1) 0;
+      padding: 4rem 2rem;
+      background: #eaf4f4;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .pivots-text {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--ink);
+      line-height: 1.9;
+    }
+
+    .pivots-text h2 {
+      margin: 0 0 1.5rem;
+      color: var(--ink);
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .pivots-text p {
+      margin: 0 0 1.35rem;
+    }
+
+    .pivots-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .pivots-text strong {
+      color: var(--teal);
+      font-weight: 800;
+    }
+
     .bio-section {
       display: grid;
       grid-template-columns: 180px minmax(0, 1fr);
@@ -384,6 +420,7 @@
       .bio-section { grid-template-columns: 1fr; }
       .profile-photo { width: 132px; height: 132px; font-size: 2.2rem; }
       .button { width: 100%; }
+      .pivots-section { padding: 4rem 1.2rem; }
     }
   </style>
 </head>
@@ -471,6 +508,19 @@
         <p>Actualizacion del proyecto Tutor COMEX UTN creado en Lovable: normativa, guias, calendario, boletas, buscador y asistente para estudiantes de Comercio Exterior.</p>
         <div class="tags"><span class="tag">Lovable</span><span class="tag">UTN</span><span class="tag">Semana 05</span></div>
       </a>
+    </section>
+
+    <section class="pivots-section" aria-label="Fundamento academico de los 6 Pivotes de la Evolucion Digital">
+      <div class="pivots-text">
+        <h2>Fundamento académico: los 6 Pivotes de la Evolución Digital</h2>
+        <p>Este proyecto nace desde la práctica de los seis pivotes estratégicos que guían la evolución digital de las organizaciones.</p>
+        <p>El primero es el <strong>Alineamiento Dinámico</strong>: el Asistente no es una tecnología añadida por encima de los procesos de la carrera, sino que responde directamente a los objetivos institucionales de la UTN — reducir fricción administrativa, mejorar la experiencia estudiantil y liberar tiempo de la Dirección de Carrera para decisiones de mayor valor.</p>
+        <p>El segundo pivote, <strong>Cultura y Liderazgo Digital</strong>, se expresa en la decisión de construir una herramienta que promueve la autogestión informada: el estudiante resuelve su duda con criterio propio antes de escalar una consulta. Eso es un cambio cultural, no solo tecnológico.</p>
+        <p>La <strong>Innovación Centrada en el Cliente</strong> está presente en cada decisión de diseño: lenguaje claro sin jerga legal, módulos ordenados por situación del estudiante — evaluación, giras, práctica, becas, TFG — y rutas visibles hacia las instancias oficiales cuando la orientación no es suficiente.</p>
+        <p>La <strong>Agilidad Operativa</strong> se refleja en la arquitectura modular de la app: cada sección de normativa puede actualizarse de forma independiente sin reescribir el sistema completo. Cuando la UTN modifica un reglamento, el cambio se aplica en ese módulo sin afectar el resto.</p>
+        <p>El pivote de <strong>Acceso y Uso de Datos</strong> aparece en la forma en que la app centraliza información que antes vivía dispersa en documentos PDF, correos y consultas verbales, convirtiéndola en una fuente única, trazable y con referencia normativa visible en cada respuesta.</p>
+        <p>Finalmente, los <strong>Ecosistemas Colaborativos</strong>: la app conecta al estudiante con la normativa, con la Dirección de Carrera, con el calendario institucional y con el asistente IA, reduciendo los silos entre actores y creando un ecosistema de orientación donde cada componente refuerza al siguiente.</p>
+      </div>
     </section>
 
     <section class="bio-section" aria-label="Sobre Maria Jesus Quiros Castro">
