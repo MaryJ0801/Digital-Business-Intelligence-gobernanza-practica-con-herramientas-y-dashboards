@@ -249,6 +249,64 @@
 
     .section.alt { background: var(--white); }
 
+    .intro-justificacion {
+      padding: 3rem 2rem;
+      background: #eef7f8;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .intro-copy {
+      max-width: 740px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .intro-copy h2 {
+      margin: 0 0 1.5rem;
+      font-size: clamp(1.55rem, 2.7vw, 2.25rem);
+      line-height: 1.18;
+    }
+
+    .intro-copy h3 {
+      margin: 1.6rem 0 0.55rem;
+      color: var(--teal);
+      font-size: 1.02rem;
+      line-height: 1.25;
+    }
+
+    .intro-copy p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .bio {
+      padding: 4rem 2rem;
+      background: var(--white);
+      border-top: 1px solid var(--line);
+    }
+
+    .bio-copy {
+      max-width: 740px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .bio-copy h2 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.55rem, 2.7vw, 2.25rem);
+      line-height: 1.18;
+    }
+
+    .bio-copy p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+    }
+
+    .bio-copy p:last-child {
+      margin-bottom: 0;
+    }
+
     .section-head {
       display: grid;
       grid-template-columns: minmax(0, 0.8fr) minmax(260px, 0.5fr);
@@ -472,6 +530,8 @@
       .app-frame { min-height: auto; padding: 14px; }
       .app-shell { min-height: auto; }
       .quick-grid { grid-template-columns: 1fr; }
+      .intro-justificacion { padding: 3rem 1.2rem; }
+      .bio { padding: 4rem 1.2rem; }
       .pivotes { padding: 4rem 1.2rem; }
     }
   </style>
@@ -524,6 +584,21 @@
           </div>
           <div class="app-note"><strong>Importante:</strong> la app orienta y organiza la informacion; las resoluciones oficiales corresponden a las instancias de la UTN.</div>
         </div>
+      </div>
+    </section>
+
+    <section class="intro-justificacion" aria-label="Introduccion y justificacion del Asistente COMEX UTN">
+      <div class="intro-copy">
+        <h2>Qu&eacute; es este proyecto, para qu&eacute; existe y para qui&eacute;n</h2>
+
+        <h3>Bloque 1 &mdash; &iquest;Qu&eacute; es?</h3>
+        <p>El Asistente Acad&eacute;mico COMEX UTN es una aplicaci&oacute;n web construida con inteligencia artificial que centraliza la normativa, gu&iacute;as, calendario, boletas y procesos clave de la carrera de Comercio Exterior de la Universidad T&eacute;cnica Nacional, sede San Carlos. Fue desarrollada como producto digital del curso Digital Business Intelligence: Gobernanza Pr&aacute;ctica con Herramientas y Dashboards de INCAE Business School.</p>
+
+        <h3>Bloque 2 &mdash; &iquest;Para qu&eacute; existe?</h3>
+        <p>Existe para convertir documentos institucionales dispersos &mdash; reglamentos en PDF, correos, consultas verbales &mdash; en una experiencia de consulta clara, trazable y responsable. El estudiante puede resolver dudas sobre evaluaci&oacute;n, giras, pr&aacute;ctica profesional, becas, reconocimientos y TFG sin depender de una consulta directa a la Direcci&oacute;n de Carrera, liberando tiempo institucional para decisiones de mayor valor.</p>
+
+        <h3>Bloque 3 &mdash; &iquest;Para qui&eacute;n?</h3>
+        <p>Para estudiantes activos de la carrera de Comercio Exterior de la UTN sede San Carlos que necesitan orientaci&oacute;n acad&eacute;mica r&aacute;pida y confiable. Tambi&eacute;n para directivos, reclutadores y evaluadores acad&eacute;micos que buscan evidencia concreta de aplicaci&oacute;n de IA en contextos institucionales reales.</p>
       </div>
     </section>
 
@@ -639,6 +714,15 @@
         <p>La <strong>Agilidad Operativa</strong> se refleja en la arquitectura modular: cada secci&oacute;n de normativa puede actualizarse de forma independiente sin reescribir el sistema completo. Cuando la UTN modifica un reglamento, el cambio se aplica en ese m&oacute;dulo sin afectar al resto. Esa modularidad es una decisi&oacute;n de gobernanza, no solo de c&oacute;digo.</p>
         <p>El pivote de <strong>Acceso y Uso de Datos</strong> aparece en la forma en que la app convierte informaci&oacute;n que antes viv&iacute;a en documentos PDF, correos y consultas verbales en una fuente &uacute;nica, trazable y con referencia normativa visible en cada respuesta. La trazabilidad no es un detalle t&eacute;cnico: es el principio que hace confiable la orientaci&oacute;n.</p>
         <p>Finalmente, los <strong>Ecosistemas Colaborativos</strong>: la app conecta al estudiante con la normativa, con la Direcci&oacute;n de Carrera, con el calendario institucional y con el asistente IA, reduciendo los silos entre actores y creando un ecosistema donde cada componente refuerza al siguiente. Un ecosistema no se construye con tecnolog&iacute;a sola &mdash; se construye cuando los actores encuentran valor en conectarse.</p>
+      </div>
+    </section>
+
+    <section class="bio" aria-label="Biografia de Maria Jesus Quiros Castro">
+      <div class="bio-copy">
+        <p class="eyebrow">Biograf&iacute;a</p>
+        <h2>Mar&iacute;a Jes&uacute;s Quir&oacute;s Castro</h2>
+        <p>Profesional en formaci&oacute;n en IA para Negocios Digitales de INCAE Business School, con foco en gobernanza digital, inteligencia de negocios y aplicaciones de inteligencia artificial para la toma de decisiones.</p>
+        <p>Este proyecto forma parte del portafolio Digital Business Intelligence y documenta el desarrollo del Asistente Acad&eacute;mico COMEX UTN como evidencia de aprendizaje aplicado en un contexto institucional real de la UTN sede San Carlos.</p>
       </div>
     </section>
   </main>
